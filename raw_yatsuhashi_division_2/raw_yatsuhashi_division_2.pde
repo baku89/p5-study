@@ -3,7 +3,7 @@
 
 final float handleLength = 0.55;
 
-final float gourdDist = 2;
+final float gourdDist = 1.5;
 final float twinDist = 3;
 
 final float gourdTime = 0.5;
@@ -11,7 +11,7 @@ final float gourdTime = 0.5;
 final float radius = 50;
 
 final float gamma = 1;
-float animDur = 40;
+float animDur = 60;
 
 //==============================
 
@@ -51,9 +51,6 @@ void draw() {
         animating = true;
         
         angle = atan2(prevY - mouseY, prevX - mouseX);
-        //animDur = dist(prevX, prevY, mouseX, mouseY) * 2;
-        
-        println( angle);
     }
     
     if (animating) {
